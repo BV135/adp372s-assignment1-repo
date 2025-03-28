@@ -1,13 +1,11 @@
-package za.ac.cput.repository.impl;
+package za.ac.cput.repository;
 // User UserRepositoryImplTest  class
 //Author: Bonga Velem (220052379)
 //Date: 27 March 2025
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import za.ac.cput.domain.User;
-
-import java.util.List;
+import za.ac.cput.repository.impl.UserRepositoryImpl;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -67,9 +65,9 @@ class UserRepositoryImplTest {
 
 
     @Test
-    void delete() {
+     void delete() {
         repository.create(user);
-        repository.delete(user);
+        repository.delete(user.getUserId());
         User deletedUser = repository.read(user.getUserId());
         assertNull(deletedUser);
     }
