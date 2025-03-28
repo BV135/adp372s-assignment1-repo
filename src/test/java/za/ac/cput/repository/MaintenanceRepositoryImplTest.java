@@ -11,6 +11,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import static org.junit.jupiter.api.Assertions.*;
+import static za.ac.cput.factory.MaintenanceFactoryTest.dateFormat;
 
 public class MaintenanceRepositoryImplTest {
         private MaintenanceRepository repository;

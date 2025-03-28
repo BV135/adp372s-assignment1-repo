@@ -51,10 +51,13 @@ public class UserRepositoryImpl implements UserRepository {
 
 
     @Override
-    public void delete(User user) {
-        userDB.remove(user.getUserId());
+    public void delete(Integer userId) {
+       userDB.remove(userId);
 
     }
+
+
+
 
 
 

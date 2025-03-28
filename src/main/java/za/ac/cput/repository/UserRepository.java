@@ -9,7 +9,7 @@ import java.util.List;
 public interface UserRepository extends IRepository<User, Integer> {
 
 
-    void delete(User user);
+
 
     List<User> getAll();
 
